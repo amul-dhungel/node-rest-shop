@@ -14,7 +14,7 @@ router.post('/', (req, res) => {
     }
     res.status(200).json({
         message: 'Handling POST request to /orde',
-        order: order
+        order: order,
     })
 })
 
