@@ -14,7 +14,7 @@ router.post('/', (req, res) => {
     }
     res.status(200).json({
         message: 'Handling POST request to /orde',
-        order: order,
+        order: order
     })
 })
 
@@ -22,16 +22,16 @@ router.post('/', (req, res) => {
 router.patch('/:orderID', (req, res, next) => {
     const id = req.params.orderID
     res.status(200).json({
-        message: "Ordeer id is updated" + id,
-
+        message: "Ordeer id is updated",
+        id: id
     })
 })
 
 router.delete('/:orderID', (req, res, next) => {
     const id = req.params.orderID
     res.status(200).json({
-        message: "Ordeer id is deleted " + id,
-
+        message: "Ordeer id is deleted",
+        id: id
     })
 })
 
